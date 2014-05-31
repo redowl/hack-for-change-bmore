@@ -1,0 +1,5 @@
+# .gitignore
+
+# vim backup files
+.*.sw[op]
+*~
