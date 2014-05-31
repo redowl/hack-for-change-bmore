@@ -10,7 +10,6 @@ function initialize() {
 
   $.getJSON(url, function(data) {
     $.each(data, function(i, row) {
-      console.log(row);
       var myLatlng = new google.maps.LatLng(row.location_1.latitude, row.location_1.longitude);
       var marker = new google.maps.Marker({
         position: myLatlng,
