@@ -12,37 +12,53 @@
   <body>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <h1>Maryland's One Stop Career Centers</h1>
-    <div id="map-canvas"/>
-      <iframe
-        width="600"
-        height="450"
-        frameborder="0" style="border:0"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD2hm4ElkW5WgSQdYqQesvXiJszGxA1-M4
-          &q=MD">
-      </iframe>
+    <div class="row">
+      <div class="col-md-3 col-md-offset-3">
+        <div id="map-canvas"/>
+          <iframe
+            width="600"
+            height="450"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD2hm4ElkW5WgSQdYqQesvXiJszGxA1-M4
+              &q=MD">
+          </iframe>
+        </div>
+      </div>
     </div>
     <h2>Looking for the nearest One-Stop Shop?</h2>
-    <form action="form1page.html" method="POST" name="form_1">
-      <fieldset>
+      <form role="form">
+        <div class="form-group">
           <label for="username">Please Enter Your Name:</label>
-            <input type="text" name="username" id="username"><br>
-          <label for="location">Location:</label>
-            <input type="text" name="location" id="location"><br>
-      </fieldset>
-    </form>
-      <fieldset>
-        <label for="services">What special services are you looking for?</label>
-          <select name="services" id="services">
-            <optgroup label="services">
-               <option>(E) Aqui se habla espanol</option>
-               <option>(ESOL) English Classes</option>
-               <option>(AE) Adult Education Classes</option>
-               <option>(FS) Full-Service Center</option>
-               <option>(S) Satellite Center</option>
-            </optgroup>
-          </select>
-      </fieldset>
-      <button type="submit" value="Click here to save">Click here to show your nearest location</button>
+          <input type="name" class="form-control" id="username" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+          <label for="street">Street Address:</label>
+            <input type="text" class="form-control" id="street" placeholder="Address">
+        </div>
+        <div class="form-group">
+          <label for="city">City:</label>
+            <input type="text" class="form-control" id="city" placeholder="City">
+        </div>
+        <div class="form-group">
+          <label for="zip">Zip Code:</label>
+            <input type="text" class="form-control" id="zip" placeholder="Zip">
+        </div>
 
+        </form>
+          <fieldset>
+            <label for="services">What special services are you looking for?</label>
+              <select name="services" id="services">
+                <optgroup label="services">
+                   <option>(E) Aqui se habla espanol</option>
+                   <option>(ESOL) English Classes</option>
+                   <option>(AE) Adult Education Classes</option>
+                   <option>(FS) Full-Service Center</option>
+                   <option>(S) Satellite Center</option>
+                </optgroup>
+              </select>
+          </fieldset>
+          <button type="submit" class="btn btn-primary" value="Click here to save">Click Here for the Nearest Location</button>
+      </div>
+    </div>
   </body>
 </html>
