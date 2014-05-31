@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 10; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+  </head>
+  <body>
+    <h1>Maryland's One Stop Career Centers</h1>
+    <div id="map-canvas"/>
+      <iframe
+        width="600"
+        height="450"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD2hm4ElkW5WgSQdYqQesvXiJszGxA1-M4
+          &q=MD">
+      </iframe>
+    </div>
+    <h2>Looking for the nearest One-Stop Shop?</h2>
+    <form action="form1page.html" method="POST" name="form_1">
+      <fieldset>
+          <label for="username">Please Enter Your Name:</label>
+            <input type="text" name="username" id="username"><br>
+          <label for="location">Location:</label>
+            <input type="text" name="location" id="location"><br>
+      </fieldset>
+    </form>
+      <fieldset>
+        <label for="services">What special services are you looking for?</label>
+          <select name="services" id="services">
+            <optgroup label="services">
+               <option>(E) Aqui se habla espanol</option>
+               <option>(ESOL) English Classes</option>
+               <option>(AE) Adult Education Classes</option>
+               <option>(FS) Full-Service Center</option>
+               <option>(S) Satellite Center</option>
+            </optgroup>
+          </select>
+      </fieldset>
+      <button type="submit" value="Click here to save">Click here to show your nearest location</button>
+
+  </body>
+</html>
