@@ -1,0 +1,4 @@
+#! /usr/bin/env bash
+
+nohup bash -c 'sudo node javascripts/server.js' </dev/null \
+  &>$(mktemp --tmpdir --suffix=.out nohup-XXXXXXXX) &
