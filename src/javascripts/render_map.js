@@ -1,5 +1,16 @@
 var map;
 
+var locations = [
+    { "name": "slkjafl fskj df",
+      "lat": 67,
+      "lon": 34
+    },
+    { "name": "slkjafl fskj df",
+      "lat": 67,
+      "lon": 34
+    }
+]
+
 function initialize() {
   var mapOptions = {
     zoom: 7,
